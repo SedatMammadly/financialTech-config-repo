@@ -1,5 +1,18 @@
 spring:
+  application:
+    name: security-service
   datasource:
     url: jdbc:postgresql://localhost:5433/USERS
     username: security
     password: 12345
+    
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka    
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+
+server:
+ port: 8080
+  
