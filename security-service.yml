@@ -20,10 +20,14 @@ eureka:
   # instance:
   #   hostname: localhost
   #   instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+  
 accessToken:
   expiredTime: 600000
+  
 refreshToken:
   expiredTime: 2592000000
+
+secretKey: eyJraWQiOiJjZGI0ZTE3YS1lYWFmLTQxMzEtYTViNi02MTc3NzAxYzZiMWQiLCJhbGciOiJSUzUxMiJ9.ew0KICAic3ViIjogIjEyMzQ1Njc4OTAiLA0KICAibmFtZSI6ICJBbmlzaCBOYXRoIiwNCiAgImlhdCI6IDE1MTYyMzkwMjINCn0.uzESVTob2wevou6sLeGNROXY9ziuKPr_X4cmD2cG5OqLkr79iIgtV31VEslIvNEg3KyVw3pC6IpqnwRnKU5kyHck8tmpEUFBrNB-tMzsS6I8xf-CY7ltBOmeyja2mSHPzu6YeqpqvoE53pq6HrMeYJ9KtNA0aOj7SwSgQeCRFM-8lhjAEtmznjZNz8MCWKuk_v8w48JcKakQqBGwnFaxDuFX3tRjD9zy_A1M2Ne3vfs-YU-nZTaWTrRJ4nackSBqlLoJxF5lnPUeAcbDPvIIIM6060SKVG9Rmdx_nqa2naqODlnO9jWB3OlwaxbgVlkAmy7ZqBUd50lx9R1O2IznnA  
 server:
  port: 8080
   
