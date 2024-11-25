@@ -26,7 +26,10 @@ accessToken:
   
 refreshToken:
   expiredTime: 2592000000
-
+  
+server:
+ port: 8080
+ 
 secret:
  private-key: MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMOyzDxrHvCG1y+R
 7tDQ6TN6eovHGvwAJbWPZJaQDgmbS+RVxQ8baKnyY/DhqgL3GG9W5wxIEe1zmx2n
@@ -47,6 +50,5 @@ xxr8ACW1j2SWkA4Jm0vkVcUPG2ip8mPw4aoC9xhvVucMSBHtc5sdpzMQHDrk5w98
 bgiNhwUCKkk0SBXmUG/HPRhX4eFWu7N50y6/40WZ5Vvd0JZFdccFhX+onUNYuO9e
 S4AwUt3+CWNE45QplQIDAQAB
  
-server:
- port: 8080
+
   
