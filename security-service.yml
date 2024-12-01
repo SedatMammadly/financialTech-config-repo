@@ -4,7 +4,7 @@ spring:
   data:
     redis:
      host: localhost
-     port: 6379
+     port: 6380
      client-type: lettuce
      password: redis_bank_pass
      timeout: 60000
