@@ -47,8 +47,8 @@ refreshToken:
 server:
  port: 8080
  
-# secret:
-#   private-key: >
+secret:
+  private-key: ${privateKey}
 #             MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDHnfwNqKptUpxd
 #             BTbrnO7tphTTfPDCfIjRy6M3eyoxkfGhpgmj0UpwB6TE+kfn3GVLQN1XAsgFERUJ
 #             C4FLKKxJ3ZUIzUdCAnCSa5lp+c6s4HsIsAHIQL5B4VL3E2kPzSR0OUIWGJiz1O9F 
@@ -75,7 +75,7 @@ server:
 #             JLrdirbor8kaDUd0+ho+xtQSvNLixoI0VjPsixx2I1/xYovO57j/ymRWvgIGmh4O
 #             +DvoLKetmmJfp5z+E0bMYXeh468n5a/kpriOR8D8coCm+J6Pimp0D2LzCq/FrL0V
 #             zdpB7zlkERZx1G5I/TnUYYI=
-#  public-key: |
+ public-key: ${publicKey}
 #              MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx538DaiqbVKcXQU265zu
 #              7aYU03zwwnyI0cujN3sqMZHxoaYJo9FKcAekxPpH59xlS0DdVwLIBREVCQuBSyis
 #              Sd2VCM1HQgJwkmuZafnOrOB7CLAByEC+QeFS9xNpD80kdDlCFhiYs9TvRTZUlaES
