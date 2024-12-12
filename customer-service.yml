@@ -1,6 +1,10 @@
 spring:
  datasource:
    url: jdbc:postgresql://localhost:5433/Customer
-   username: Customer
-   password: 1234
+   username: customer
+   password: 12345
+ jpa: 
+   show-sql: true
+   hibernate:
+     ddl-auto: create-drop
    
