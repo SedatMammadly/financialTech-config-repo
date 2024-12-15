@@ -1,0 +1,27 @@
+spring:
+ cloud:
+  gateway:
+   routes:
+    route:
+     id: customer-service
+     url: lb://customer-service
+     predicates:
+      - Path=/api/v1/customer/**
+     filters:
+      - name: JwtAuthenticationFilter
+
+management:
+ endpoints:
+  web:
+   exposure:
+    include: health,info,metrics
+
+eureka:
+ client:
+   serviceUrl:
+     defaultZone: http://localhost:8761/eureka/
+
+server:
+ port: 9090
+  
+      
