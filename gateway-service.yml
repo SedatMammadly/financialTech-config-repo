@@ -10,15 +10,14 @@ spring:
      filters:
       - name: JwtAuthenticationFilter
       
- main:
-  web-application-type: reactive
-  allow-circular-references: true  
+#  main:
+#   allow-circular-references: true  
   
-management:
- endpoints:
-  web:
-   exposure:
-    include: health,info,metrics
+# management:
+#  endpoints:
+#   web:
+#    exposure:
+#     include: health,info,metrics
 
 server:
   port: 9090
