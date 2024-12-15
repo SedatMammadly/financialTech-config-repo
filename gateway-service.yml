@@ -8,7 +8,7 @@ spring:
       predicates:
        - Path=/api/v1/customer/**
       filters:
-       - name: JwtAuthenticationFilter
+       - name: jwtAuthenticationFilter
       
 #  main:
 #   allow-circular-references: true  
