@@ -20,7 +20,7 @@ spring:
 #     include: health,info,metrics
 
 server:
-  port: 9090
+  port: 8083
   
 eureka:
  client:
