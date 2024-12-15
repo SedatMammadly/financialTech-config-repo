@@ -4,7 +4,7 @@ spring:
     routes:
      route:
       id: customer-service
-      url: lb://CUSTOMER-SERVICE
+      uri: lb://CUSTOMER-SERVICE
       predicates:
        - Path=/api/v1/customer/**
       filters:
