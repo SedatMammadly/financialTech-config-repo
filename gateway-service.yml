@@ -9,7 +9,10 @@ spring:
       - Path=/api/v1/customer/**
      filters:
       - name: JwtAuthenticationFilter
-
+      
+ main:
+  allow-circular-references: true  
+  
 management:
  endpoints:
   web:
