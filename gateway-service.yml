@@ -1,14 +1,14 @@
 spring:
- cloud:
-  gateway:
-   routes:
-    route:
-     id: customer-service
-     url: lb://customer-service
-     predicates:
-      - Path=/api/v1/customer/**
-     filters:
-      - name: JwtAuthenticationFilter
+ # cloud:
+ #  gateway:
+ #   routes:
+ #    route:
+ #     id: customer-service
+ #     url: lb://customer-service
+ #     predicates:
+ #      - Path=/api/v1/customer/**
+ #     filters:
+ #      - name: JwtAuthenticationFilter
       
  main:
   allow-circular-references: true  
