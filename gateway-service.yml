@@ -17,11 +17,11 @@ logging:
 #  main:
 #   allow-circular-references: true  
   
-# management:
-#  endpoints:
-#   web:
-#    exposure:
-#     include: health,info,metrics
+management:
+ endpoints:
+  web:
+   exposure:
+    include: gateway
 
 server:
   port: 8083
