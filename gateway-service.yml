@@ -11,6 +11,7 @@ spring:
       - name: JwtAuthenticationFilter
       
  main:
+  web-application-type: reactive
   allow-circular-references: true  
   
 management:
