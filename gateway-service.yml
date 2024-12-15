@@ -9,7 +9,11 @@ spring:
        - Path=/api/v1/customer/**
       filters:
        - name: jwtAuthenticationFilter
-      
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+     
 #  main:
 #   allow-circular-references: true  
   
