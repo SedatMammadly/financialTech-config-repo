@@ -3,8 +3,8 @@ server:
 
 spring:
   cloud:
-   gateway:
-     discovery:
+    gateway:
+      discovery:
         locator:
           enabled: true
     # routes:
