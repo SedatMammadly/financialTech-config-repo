@@ -2,8 +2,8 @@ server:
   port: 9090
 
 spring:
-  main:
-   allow-circular-references: true  
+#   main:
+#    allow-circular-references: true  
   cloud:
     gateway:
       discovery:
@@ -19,21 +19,15 @@ spring:
 
 logging:
   level:
-    root: INFO
-    com.sadatscode.gatewayservice.filter: INFO
-    org.springframework.cloud.gateway: TRACE
+    root: DEBUG
+    com.sadatscode.gatewayservice.filter: DEBUG
+    org.springframework.cloud.gateway: DEBUG
     org.springframework.http.server.reactive: DEBUG
     org.springframework.web.reactive: DEBUG
     reactor.ipc.netty: DEBUG
     reactor.netty: DEBUG
      
 
-  
-management:
- endpoints:
-  web:
-   exposure:
-    include: gateway
   
 eureka:
  client:
