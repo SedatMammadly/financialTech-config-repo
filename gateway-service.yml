@@ -21,7 +21,8 @@ spring:
          uri: lb://SECURITY-SERVICE
          predicates:
            - Path=/api/v1/auth/**
-          
+           - Path=/api/v1/user/**
+           
 
 logging:
   level:
