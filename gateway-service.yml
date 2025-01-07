@@ -20,7 +20,7 @@ spring:
         - id: security-service
           uri: lb://SECURITY-SERVICE	
           predicates:
-            - Path=/api/v1/{auth,user}/**
+            - Path=/api/v1/user/**
            
 
 logging:
