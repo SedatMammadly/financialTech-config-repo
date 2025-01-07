@@ -4,9 +4,6 @@ server:
 spring:
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
       routes:
         - id: customer-service
           uri: lb://CUSTOMER-SERVICE
@@ -20,7 +17,9 @@ spring:
           predicates:
             - Path=/api/v1/user/**
 
-           
+       discovery:
+        locator:
+          enabled: true       
 
 logging:
   level:
