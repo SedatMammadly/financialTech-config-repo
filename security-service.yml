@@ -34,9 +34,9 @@ eureka:
   client:
     service-url:
       default-zone: http://localhost:8761/eureka/   
-  # instance:
-  #   hostname: localhost
-  #   instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+  instance:
+    hostname: localhost
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
   
 accessToken:
   expiredTime: 600000
