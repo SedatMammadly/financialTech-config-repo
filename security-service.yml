@@ -82,5 +82,6 @@ secret:
     B8aUyMP1AoLWNP6gv/MSObA6FKzXh4zhawy2w6SO0VLf4d702iWhZHRhm1e2ed0C
     vwIDAQAB
 
-
+server:
+ port: 8080
   
