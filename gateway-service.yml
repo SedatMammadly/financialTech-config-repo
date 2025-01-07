@@ -16,9 +16,10 @@ spring:
             - name: JwtAuthenticationFilter
 
         - id: security-service
-          uri: lb://SECURITY-SERVICE	
+          uri: lb://SECURITY-SERVICE
           predicates:
             - Path=/api/v1/user/**
+
            
 
 logging:
