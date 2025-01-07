@@ -9,13 +9,19 @@ spring:
       discovery:
         locator:
           enabled: true
-    # routes:
-    #  - id: customer-service
-    #    uri: http://localhost:8081
-    #    predicates:
-    #      - Path=/api/v1/customer/**
-    #    filters:
-    #     - name: JwtAuthenticationFilter
+    routes:
+       - id: customer-service
+         uri: lb://CUSTOMER-SERVICE
+         predicates:
+           - Path=/api/v1/customer/**
+         filters:
+          - name: JwtAuthenticationFilter
+
+       - id: security-service
+         uri: lb://SECURITY-SERVICE
+         predicates:
+           - Path=/api/v1/auth/**
+          
 
 logging:
   level:
