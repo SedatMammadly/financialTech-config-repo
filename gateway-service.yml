@@ -4,18 +4,9 @@ server:
 spring:
   cloud:
     gateway:
-      routes:
-        - id: customer-service
-          uri: lb://CUSTOMER-SERVICE
-          predicates:
-            - Path=/api/v1/customer/**
-          filters:
-            - name: JwtAuthenticationFilter
-
-        - id: security-service
-          uri: lb://SECURITY-SERVICE
-          predicates:
-            - Path=/api/v1/user/**
+       discovery:
+        locator:
+          enabled: true 
 
           
 
