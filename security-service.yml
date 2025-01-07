@@ -44,8 +44,6 @@ accessToken:
 refreshToken:
   expiredTime: 2592000000
   
-server:
- port: 8080
  
 secret:
   private-key: |
